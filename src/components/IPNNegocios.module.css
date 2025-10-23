@@ -1,0 +1,201 @@
+.section {
+  background-color: #fff;
+  padding: 80px 10%;
+  font-family: 'Inter', sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 90px;
+  gap: 40px;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+
+.textContent {
+  max-width: 600px;
+}
+
+.textContent h2 {
+  font-size: 40px;
+  color: #263640;
+  margin-bottom: 20px;
+}
+
+.textContent p {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.mainImage {
+  width: 35%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 470px;
+  max-height: auto;
+}
+
+.button {
+  background-color: #263640;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.button:hover {
+  background-color: #1c2830;
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #E5E5E5;
+  border-radius: 10px;
+  text-align: center;
+  width: 25%;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  max-width: 300px;
+  max-height: auto;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: #263640;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #555;
+}
+
+@media (max-width: 1024px) {
+  .section {
+    padding: 60px 5%;
+  }
+
+  .header {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 60px;
+    flex-direction: column-reverse;
+  }
+
+  .textContent {
+    max-width: 90%;
+  }
+
+  .textContent h2 {
+    font-size: 2.2rem;
+  }
+
+  .textContent p {
+    font-size: 1rem;
+  }
+
+  .mainImage {
+    width: 80vw;
+    margin-bottom: 0px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .cardsContainer {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .card {
+    width: 40%;
+  }
+}
+
+/* --- Móviles (pantallas pequeñas: ≤768px) --- */
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 30px;
+  }
+
+  .textContent h2 {
+    font-size: 1.8rem;
+  }
+
+  .textContent p {
+    font-size: 0.95rem;
+  }
+
+  .mainImage {
+    width: 70vw;
+  }
+
+  .cardsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 70%;
+  }
+
+  .button {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+/* --- Móviles muy pequeños (≤480px) --- */
+@media (max-width: 480px) {
+  .section {
+    padding: 30px 20px;
+  }
+
+  .textContent h2 {
+    font-size: 1.6rem;
+  }
+
+  .textContent p {
+    font-size: 0.9rem;
+  }
+
+  .card {
+    width: 80%;
+    padding: 15px;
+  }
+
+  .card p {
+    font-size: 0.85rem;
+  }
+
+  .mainImage {
+    width: 80vw;
+  }
+
+  .button {
+    font-size: 0.9rem;
+    padding: 10px 22px;
+  }
+}
+

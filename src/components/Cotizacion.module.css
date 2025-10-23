@@ -1,0 +1,205 @@
+.cotizacionSection {
+  background-color: #E6F0F4;
+  padding: 80px 10%;
+  font-family: 'Inter', sans-serif;
+  color: #263640;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.header h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #152026;
+}
+
+.header p {
+  color: #444;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 20px;
+}
+
+.cotizacionContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.cotizacionForm {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  flex: 1 1 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cotizacionForm input,
+.cotizacionForm select,
+.cotizacionForm textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.cotizacionForm input:focus,
+.cotizacionForm select:focus,
+.cotizacionForm textarea:focus {
+  border-color: #263640;
+  box-shadow: 0 0 5px rgba(38, 54, 64, 0.3);
+}
+
+.button {
+  background-color: #263640;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.button:hover {
+  background-color: #1b262e;
+}
+
+.cotizacionInfo {
+  flex: 1 1 35%;
+  background-color: #E5E5E5;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.cotizacionInfo h3 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #152026;
+}
+
+.cotizacionInfo p {
+  color: #333;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+/* ==============================
+   MEDIA QUERIES
+================================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .cotizacionContainer {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .cotizacionForm,
+  .cotizacionInfo {
+    width: 100%;
+  }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+  .cotizacionSection {
+    padding: 60px 6%;
+  }
+
+  .header h2 {
+    font-size: 2rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .cotizacionForm {
+    padding: 25px;
+  }
+
+  .cotizacionInfo {
+    padding: 25px;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+  .header h2 {
+    font-size: 1.8rem;
+  }
+
+  .cotizacionForm input,
+  .cotizacionForm select,
+  .cotizacionForm textarea {
+    font-size: 0.9rem;
+  }
+
+  .button {
+    font-size: 0.9rem;
+    padding: 12px 20px;
+  }
+}
+
+/* Borde verde si está correcto */
+.valid {
+  border-color: #28a745 !important;
+}
+
+/* Borde rojo si hay error */
+.invalid {
+  border-color: #dc3545 !important;
+}
+
+/* Mensajes de error debajo del input */
+.error {
+  color: #dc3545;
+  font-size: 0.9rem;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+/* Mensaje general debajo del botón */
+.submitError {
+  color: #dc3545;
+  font-weight: 600;
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* Notificación tipo toast desde abajo */
+.toastNotification {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #28a745;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  font-weight: 600;
+  z-index: 9999;
+  animation: slideUp 0.3s ease-out;
+}
+
+/* Animación del toast */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateX(-50%) translateY(50px); }
+  to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}

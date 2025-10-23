@@ -1,0 +1,179 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+.contact-section {
+  background-color: #263640;
+  padding: 60px 20px;
+  font-family: 'Inter', sans-serif;
+  color: #263640;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(38, 54, 64, 0.1);
+}
+
+.contact-container h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #263640;
+}
+
+.contact-container p {
+  margin-bottom: 30px;
+  color: #6b7b84;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #6b7b84;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #f9fbfc;
+  color: #263640;
+}
+
+.contact-form button {
+  background-color: #263640;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form button:hover {
+  background-color: #6b7b84;
+}
+
+/* Social Cards */
+.social-icons-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.social-icons-container img {
+  width: 80px;
+  background-color: #e9f7ff29;
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.hover {
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+  /* border: 1px solid #263640; */
+}
+
+.hover:hover {
+  transition: all 0.4s ease;
+  transform: scale(1.1);
+  border: 1px solid #263640;
+}
+
+textarea {
+    font-family: "Inter", sans-serif;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 20px;
+  }
+
+  .contact-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .social-card {
+    flex: 1 1 100%;
+  }
+
+  
+  .social-cards {
+    grid-template-columns: 1fr;
+  }
+
+@media (max-width: 520px) {
+  .social-icons-container {
+  gap: 20px;
+}
+}
+
+}
+
+/* Borde verde si está correcto */
+.valid {
+  border-color: #28a745 !important;
+}
+
+/* Borde rojo si hay error */
+.invalid {
+  border-color: #dc3545 !important;
+}
+
+/* Mensajes de error debajo del input */
+.error {
+  color: #dc3545;
+  font-size: 0.9rem;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+/* Mensaje global debajo del botón */
+.submitError {
+  color: #dc3545;
+  font-weight: 600;
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* Notificación tipo toast desde abajo */
+.toastNotification {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #28a745;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  font-weight: 600;
+  z-index: 9999;
+  animation: slideUp 0.3s ease-out;
+}
+
+/* Animación del toast */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateX(-50%) translateY(50px); }
+  to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}

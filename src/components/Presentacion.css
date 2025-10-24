@@ -104,6 +104,8 @@
     display: none;
   }
 
+    .hero-copy h1{ font-size:35.2px; }
+    .hero-copy p{ font-size:16px; }
   .presentacion {
     margin-top: 30px;
   }

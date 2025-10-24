@@ -97,4 +97,14 @@
 
 @media (max-width:700px){
   .cards{ grid-template-columns: 1fr; }
+  .section-header p {
+  font-size: 16px;
+}
+.section-header h2 {
+  font-size: 25px;
+}
+.container h2 {
+  font-size: 25px;
+}
+
 }

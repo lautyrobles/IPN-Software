@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import './Contact.css';
 import instagram from "../assets/social-icons/instagram-1-svgrepo-com.svg";
 import facebook from "../assets/social-icons/facebook-1-svgrepo-com.svg";
-import whatsapp from "../assets/social-icons/whatsapp-svgrepo-com.svg";
+// import whatsapp from "../assets/social-icons/whatsapp-svgrepo-com.svg";
 import linkedin from "../assets/social-icons/linkedin-1-svgrepo-com.svg";
 
 import AOS from 'aos';
@@ -165,10 +165,15 @@ const ContactForm = () => {
         </form>
 
         <div className='social-icons-container'>
+          <a target='_blank' href="https://www.instagram.com/ipn_software?igsh=MWFjbHhmOGhnMDlxeg%3D%3D&utm_source=qr">
           <img className='hover' src={instagram} alt="Instagram" />
+          </a>
+          <a target='_blank' href="https://www.linkedin.com/company/ipn-software/about/?viewAsMember=true">
           <img className='hover' src={linkedin} alt="LinkedIn" />
-          <img className='hover' src={whatsapp} alt="WhatsApp" />
+          </a>
+          <a target='_blank' href="https://www.facebook.com/profile.php?id=61582482527829">
           <img className='hover' src={facebook} alt="Facebook" />
+          </a>
         </div>
       </div>
 

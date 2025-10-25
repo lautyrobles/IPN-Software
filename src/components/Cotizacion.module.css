@@ -196,6 +196,7 @@
   font-weight: 600;
   z-index: 9999;
   animation: slideUp 0.3s ease-out;
+  text-align: center;
 }
 
 /* Animación del toast */
